@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataBaseConfig>
+  <DbType>sqlserver</DbType>
+  <DataSource>qds161729659.my3w.com</DataSource>
+  <UserID>qds161729659</UserID>
+  <Password>wcw840525</Password>
+  <DataBase>qds161729659_db</DataBase>
+  <Port>1433</Port>
+  <Pooling>True</Pooling>
+  <EncodingName></EncodingName>
+</DataBaseConfig>

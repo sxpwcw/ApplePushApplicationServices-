@@ -1,0 +1,104 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>发送推送通知</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/PushSending.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Push.GetAllTokens($("#DeviceToken"));
+            $("#submit").click(function () {
+                Push.Send();
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        select {
+            width: 260px;
+            height: 20px;
+        }
+
+        textarea {
+            width: 255px;
+            height: 150px;
+        }
+        input[type=text]{
+            width: 256px;
+            height: 20px;
+        }
+        table {
+            margin: 0 auto;
+        }
+        table td{
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("返回", "Index")
+    </p>
+    <table class="table">
+        <tr>
+            <td>
+                设备序号：
+            </td>
+            <td>
+                <select id="DeviceToken"></select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                客户声音：
+            </td>
+            <td>
+                <select id="audio">
+                    <option value="0">【请选择】</option>
+                    <option value="default">默认</option>
+                    <option value="pushmsg.caf">QQ提醒</option>
+                    <option value="QrReadend.wav">二维码读取</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                推送类别：
+            </td>
+            <td>
+                <select id="pType">
+                    <option value="0">【请选择】</option>
+                    <option value="s">正式推送</option>
+                    <option value="d">调试推送</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                标识数量：
+            </td>
+            <td>
+                <input type="text" id="Badge" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                发送内容：
+            </td>
+            <td>
+                <textarea id="Msg"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="发送" id="submit" /></td>
+        </tr>
+    </table>
+</body>
+</html>

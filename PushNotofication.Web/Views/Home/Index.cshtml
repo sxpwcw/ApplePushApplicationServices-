@@ -1,0 +1,38 @@
+﻿@model PagerOptions<PushNotificationServices.Models.NotificationDevice>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>推送系统</title>
+</head>
+<link href="~/css/Style.css" rel="stylesheet" />
+<body>
+    <p>
+        @Html.ActionLink("查看推送历史", "History")  | @Html.ActionLink("发送新推送", "Push")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                设备ID
+            </th>
+        </tr>
+
+        @foreach (var item in Model.ItemCollection)
+        {
+            <tr>
+                <td>
+                    @item.Tokens.ToStringTrim().Replace("<", "").Replace(">", "").Replace(" ", "").ToStringTrim()
+                </td>
+            </tr>
+        }
+
+    </table>
+    @Html.Pager(Model)
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotificationServices.Models", "PushNotificationServices.Models\PushNotificationServices.Models.csproj", "{AECA7EC8-687F-4C9D-BDC6-5A4DB4048E64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotificationServices.Controllers", "PushNotificationServices.Controllers\PushNotificationServices.Controllers.csproj", "{2A0855CE-9E29-4BF8-81E8-0C89EA492DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{55D4E642-A4EB-494D-A3F1-FD6989503CDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplePushServices", "ApplePushServices\ApplePushServices.csproj", "{F9920380-08E5-4EE7-802C-919E671D0CF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "ConsoleApplication2\ConsoleApplication2.csproj", "{F01121F4-66F0-4BB0-BCA1-0BB3BE8EA869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotofication.Web", "PushNotofication.Web\PushNotofication.Web.csproj", "{02CA535E-1B24-4451-8451-EA563B9D46EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AECA7EC8-687F-4C9D-BDC6-5A4DB4048E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECA7EC8-687F-4C9D-BDC6-5A4DB4048E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECA7EC8-687F-4C9D-BDC6-5A4DB4048E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECA7EC8-687F-4C9D-BDC6-5A4DB4048E64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A0855CE-9E29-4BF8-81E8-0C89EA492DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A0855CE-9E29-4BF8-81E8-0C89EA492DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A0855CE-9E29-4BF8-81E8-0C89EA492DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A0855CE-9E29-4BF8-81E8-0C89EA492DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D4E642-A4EB-494D-A3F1-FD6989503CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D4E642-A4EB-494D-A3F1-FD6989503CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D4E642-A4EB-494D-A3F1-FD6989503CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D4E642-A4EB-494D-A3F1-FD6989503CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9920380-08E5-4EE7-802C-919E671D0CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9920380-08E5-4EE7-802C-919E671D0CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9920380-08E5-4EE7-802C-919E671D0CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9920380-08E5-4EE7-802C-919E671D0CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F01121F4-66F0-4BB0-BCA1-0BB3BE8EA869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F01121F4-66F0-4BB0-BCA1-0BB3BE8EA869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F01121F4-66F0-4BB0-BCA1-0BB3BE8EA869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F01121F4-66F0-4BB0-BCA1-0BB3BE8EA869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02CA535E-1B24-4451-8451-EA563B9D46EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02CA535E-1B24-4451-8451-EA563B9D46EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02CA535E-1B24-4451-8451-EA563B9D46EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02CA535E-1B24-4451-8451-EA563B9D46EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

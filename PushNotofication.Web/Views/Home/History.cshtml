@@ -1,0 +1,40 @@
+﻿@model PagerOptions<PushNotificationServices.Models.History>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>历史信息</title>
+</head>
+<link href="~/css/Style.css" rel="stylesheet" />
+<body>
+    <p>
+        @Html.ActionLink("返回", "Index")
+    </p>
+    <table class="table">
+        <tr>
+            <th>历史消息
+            </th>
+            <th>完成时间
+            </th>
+        </tr>
+    
+    @foreach (var item in Model.ItemCollection) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Msg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HistoryData)
+            </td>
+        </tr>
+    }
+    </table>
+    @Html.Pager(Model)
+</body>
+</html>

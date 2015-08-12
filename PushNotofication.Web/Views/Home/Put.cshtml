@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <form method="put" action="/Home/UploadFile" enctype="multipart/form-data">
+        <input type="hidden" name="FileExtensions" value="jpg" />
+        <input type="file" />
+        <input type="submit" value="提交" />
+    </form>
+</body>
+</html>

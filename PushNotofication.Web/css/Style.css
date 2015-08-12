@@ -1,0 +1,27 @@
+﻿    table {
+        width: 95%;
+        margin: 10px auto;
+        border-top: 1px #CCC solid;
+        border-left: 1px #CCC solid;
+        border-collapse:collapse;
+    }
+        table th {
+            background:#999;
+            color:#FFF;
+            height:35px;
+        }
+        table td, table th {
+            text-align: center;
+            border-right: 1px #CCC solid;
+            border-bottom: 1px #CCC solid;
+            word-break:break-all;
+        }
+    p {
+        padding-left:2%;
+    }
+.Pager { width: auto;height: auto; margin: 10px auto; text-align: center; display:block}
+    .Pager input[type=text] { width: 50px; height: 20px; }
+    .Pager a { text-align: center; text-decoration: none; margin-left: 5px; border: 1px solid #CCC; background: #FFF; padding-left: 5px; padding-right: 5px; font-size: 15px; color: #282828; }
+        .Pager a.on { text-align: center; text-decoration: none; margin-left: 5px; border: 1px solid #ff0000; background: #FFF; padding-left: 5px; padding-right: 5px; font-size: 15px; color: #282828; }
+        .Pager a:hover { text-align: center; text-decoration: none; margin-left: 5px; border: 1px solid #CCC; background: #ff7200; color: #FFF; padding-left: 5px; padding-right: 5px; font-size: 15px; }
+    .Pager input[type=button] { width: auto; height: auto; background: rgb(248,248,248); border: 1px #ccc solid; color: #000; line-height: 18px; height: 22px; margin-left: 5px; }
