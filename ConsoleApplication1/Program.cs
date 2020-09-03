@@ -86,7 +86,7 @@ namespace ConsoleApplication1
                 Console.WriteLine("Device token length error！");
             }
             byte[] deviceTokenSize = BitConverter.GetBytes(IPAddress.HostToNetworkOrder(Convert.ToInt16(deviceToken.Length)));
-            string str = "{\"aps\":{\"alert\":\"你好啊斯薛萍！\",\"badge\":1,\"sound\":\"pushmsg.caf\"}}";
+            string str = "{\"aps\":{\"alert\":\"你好啊XXX！\",\"badge\":1,\"sound\":\"pushmsg.caf\"}}";
             byte[] payload = Encoding.UTF8.GetBytes(str);
             byte[] payloadSize = BitConverter.GetBytes(IPAddress.HostToNetworkOrder(Convert.ToInt16(payload.Length)));
             List<byte[]> notificationParts = new List<byte[]>();
